@@ -9,6 +9,30 @@ div {
  margin: 10px;
  padding: 10px
 }
+.news {
+    background-color: lightblue;
+        margin: 10px; padding: 10px; border-radius: 5px; font-size: larger; 
+        box-sizing: content-box;
+    width: 100%;
+    border: solid #5B6DCD 10px;
+    padding: 5px;
+    }
+.important {background-color:rgb(135, 15, 15); color:white}
+
+.unobtainableinformation {
+    background-color:brown;
+    margin: 20px; padding: 10px; border-radius: 10 px; font-size: larger; 
+    box-sizing: content-box;
+    width: 25%; height: 10%;
+    border: solid #111 30px; overflow-x: hidden;
+ 
+}
+div.fixed {
+    position: fixed;
+    bottom: 100px;
+    right: 100px;
+    width: 300px;
+    border: 3px solid #73AD21; }
 button {
     background-color: #ccc;
     border: solid 1px gray;
