@@ -1,53 +1,101 @@
-<!--This page was created by Kris Lara-->
 <html>
-    <script src="helloworld.js"></script>
- <body onload="hello()">
-    <link rel = "stylesheet" href = "style.css">
-    <body>
+    <link rel="stylesheet" href="style.css">
     <head>
-        <meta name="viewport"
-content="width=device-width, initial-scale=1.0, user-scalable=no">
-<link rel="icon" type="image/png" sizes="64x64" href="/KrisLara1.github.io/QPNG.png">
-<link rel="icon" type="image/png" sizes="128x128" href="/KrisLara1.github.io/QPNG.png">
-</head>
-<head>
-    <title> The Letter Q </title>
-</head>
-        <h1>unQuestionably the best letter</h1>
-        <div style="background-color: #FFF; font-weight: bold; color: #F00"> This is Quite the read!!!</div>
-    <table> 
-        <tr>
-        <td> No one gives this amazing letter enough credit. 
-            <b> Quickly</b> this letter sunk into our hearts like <i> Quicksand.</i></td>
-        It is a conundrum as to this letters, not even Quiet praise. </tr></td>
-    </table>
-    <div style="background-color:aqua; padding: 1px; font-size: smaller; color: olive"> Here is this Quality letter!</div>
-    <img src = "LetterQ.png"  width="150">
-    <div> Click this link to find out who is Q's best friend!!</a></div>
-    <div>Google the longest Q word and what it means! Quattuordecillion </div>
-    <button onclick="location.href= 'page2.html'" type="button">
-        The Letter U </button>
-    </button>
-    <p> Which Word best describles you? </p>
-    <form action="/action_page.php">
-        <input type="checkbox" id="Underdog" name="u_words" value="Underdog">
-        <label for="Underdog"> Underdog </label><br>
-        <input type="checkbox" id="Unicorn" name="u_words" value="Unicorn">
-        <label for="Unicorn"> Unicorn </label><br>
-        <input type="checkbox" id="Unique" name="u_words" value="Unique">
-        <label for="Unique"> Unique </label><br><br>
-        </form>
-        <textarea rows="4" cols="30">Tell me what is your favorite U word and why here!</textarea>
-        <form action="/action_page.php">
-            <p>Please select your favorite Game:</p>
-            <input type="radio" id = "Undertale" name= "fav_game" value="Undertale">
-            <label for="Undertale">Undertale</label><br>
-            <input type="radio" id = "Ultimate Marvel vs Capcom 3" name= "fav_game"  value="Ultimate Marvel vs Capcom 3">
-            <label for="Ultimate Marvel vs Capcom 3">Ultimate Marvel vs Capcom 3</label><br>
-            <input type="radio" id="Uncharted 4" name="fav_game" value="Uncharted 4">
-            <label for="Uncharted 4">Uncharted 4</label>
-          <button onclick="hello()">PressMe</button>
-</body>
-</link>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>
+            Kris Lara's Portfolio
+            </title>
+         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
+    <body>
+        
+        <div class="heading" id="top">
+            <div class="navbar">
+                <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a> 
+                <a type="button" id="link" href="#middle"><i class="fa fa-fw fa-envelope"></i> Contact</a> 
+                <a type="button" id="link" href="#skills_header"><i class="fa fa-fw fa-user"></i> Skills</a>
+              </div>              
+
+              <div class="greeting" id="home">
+                Hello! I'm Kris
+                </div>
+                <br>
+                <div class="greeting"> Lara.</div>
+                <div class="subheader">
+                  <br>
+                <p>A Computer Information Systems major at Caldwell University! I am also a front end web developer with skills in python and excel.</p>
+                <br>
+                <br>
+                </div>
+                <button type="button" onClick="document.getElementById('middle').scrollIntoView();"class="animated" style="vertical-align:middle"><span> More About Me!</span></button>
+                </div> 
+                <img id="kris" src="IMG_0074.jpg">      
+        </div>
+        </div>
+
+        <div class="middle" id="middle">
+            <div class="header_one">  
+            <h2 id="aboutMe"><i class="material-icons" style="font-size:40px" >person</i>About Me</h2> </div>
+            <div class="continer_one">
+            <div><b>Hey, Kris Here!</b> </div>
+            <div> <b>College Student</b></div>
+
+            <p> I am a front end developer from San Juan, Puerto Rico. I am currently a sophomore in Caldwell University studying computer information systems with a business track. I am very passionate about learning code and trying out many different languages. I have and will continue to improve my skills as a coder.
+            </p>
+
+             <div class="middle_sub">Age: <span class="middle_span">19</span> </div>
+             <div class="middle_sub"> Phone: <span class="middle_span">(+1) 862-414-1722 </span> </div>
+             <div class="middle_sub"> Email: <span class="middle_span"> KrisLara863@gmail.com </span> </div>
+             <div class="middle_sub"> Place: <span class="middle_span"> Caldwell University </span> </div>
+        </div>
+        <img class="about_me_pic" src="better_pic.png">
+
+
+
+        <div class="last" id="last">
+          <H2 id="skills_header"><i class="fa fa-desktop" id="desktop" style="font-size:34px;color:#FBEAEB"></i></i>My Skills</H2>
+            <div class="tab">
+                <button class="tablinks" onclick="openskill(event, 'Python')">Python</button>
+                <button class="tablinks" onclick="openskill(event, 'HTML')">HTML</button>
+                <button class="tablinks" onclick="openskill(event, 'Excel')">Excel</button>
+              </div>
+              
+              <div id="Python" class="tabcontent" style="display: block">
+                <h3>Python</h3>
+                <p>One of my favorite languages I have taken a programming class on python and will take anoter next year where I will go more in-depth. </p>
+              </div>
+              
+              <div id="HTML" class="tabcontent">
+                <h3>HTML</h3>
+                <p>As you can see I have worked with front-end development with html, CSS, and JavaScript! I love building websites and coming up with fun designs! I can't learn more and more about web building! </p>
+              </div>
+              
+              <div id="Excel" class="tabcontent">
+                <h3>Excel</h3>
+                <p>Excel is another skill I learned while in school. One of the newest skills I mastered in Business Spreadsheet Application. Some of my favorite tools in excel are pivottables, charts, and many of the formulas!</p>
+                </div>
+
+        <div class="ending_menu_p1">
+            <h2>Kris Lara's Portfolio</h2>
+            <p>Thank you for visiting my portfolio. If you are interested in working togehter contact me!</p>
+          </div>
+          <div class="ending_menu_p2">
+            <h2>Quick Links</h2>
+            <button type="button" id="menu" onClick="document.getElementById('top').scrollIntoView();">Home</button>
+            <br>
+            <br>
+            <button type="button" id="menu" onClick="document.getElementById('middle').scrollIntoView();">About Me</button>
+            <br>
+            <br>
+            <button type="button" id="menu" onClick="document.getElementById('last').scrollIntoView();">Skills</button>
+          </div>
+          <div class="ending_menu_p3">
+            <h2>Contact Menu</h2>
+             <span>Phone: (+1) 862-414-1722</span>
+             <br>
+             <span>Email: KrisLara863@gmail.com</span>
+          </div>
+        </div>  
+        <script src="helloworld.js"></script>
+    </body>
 </html>
